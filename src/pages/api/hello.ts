@@ -8,6 +8,6 @@ interface Data {
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
-): JSX.Element {
+): any {
   res.status(200).json({ name: "John Doe" });
 }
