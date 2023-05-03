@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("../assets/Quicksand-VariableFontWeight.woff2") format("woff2"),
+    url("../assets/Quicksand-VariableFontWeight.woff") format("woff");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.headline1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 68px;
+  letter-spacing: -0.05em;
+}
+
+.headline2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 42px;
+  letter-spacing: -0.05em;
+}
+
+.headline3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.05em;
+}
+
+.headline4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+}
+
+.body1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+}
+
+.body2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+}
+
+.subtitle2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+}
+
+.caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
