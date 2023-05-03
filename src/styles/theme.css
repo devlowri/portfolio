@@ -1,0 +1,12 @@
+:root {
+    --primary: #FCDA69;
+    --supplementary: #8873EF;
+
+    /* Greyscale system */
+    --darkest-grey: #122640
+    --dark-grey: #617691
+    --grey: #D4DDE9
+    --light-grey: #EDF1F5
+    --lightest-grey: #F5F7FA
+    --white: #ffffff;
+}
