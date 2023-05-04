@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HeroSection from "@/sections/blog/hero";
 
 export default function Home(): JSX.Element {
   return (
@@ -10,7 +11,7 @@ export default function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Development in progress...</h1>
+        <HeroSection />
       </main>
     </>
   );

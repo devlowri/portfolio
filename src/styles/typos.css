@@ -8,6 +8,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  color: var(--default-text-color, #242426);
 }
 
 .headline1 {
@@ -45,16 +46,16 @@ body {
 .body1 {
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.02em;
 }
 
 .body2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.02em;
 }
 
@@ -79,4 +80,12 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
 }

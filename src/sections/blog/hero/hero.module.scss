@@ -1,0 +1,102 @@
+@import "/src/styles/mediaqueries.scss";
+
+.heroContent {
+  display: grid;
+  gap: 3rem; /* 48px*/
+  @media (min-width: $lg) {
+    grid-template-columns: 3fr 5fr;
+  }
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    .aboutMe {
+      margin-top: 1rem; /* 16px */
+      margin-bottom: 2rem; /* 32px */
+    }
+    .rowAligned {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem; /* 8px */
+      align-items: center;
+    }
+    .socialMedia {
+      margin-top: auto;
+      padding-top: 2rem; /* 32px */
+    }
+  }
+  .portrait {
+    display: none;
+    @media (min-width: $lg) {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .floatText {
+      display: none;
+      @media (min-width: $lg) {
+        display: block;
+        position: absolute;
+        top: -1rem; /* -16px */
+        right: -1rem; /* -16px */
+        text-align: center;
+      }
+    }
+    .styledPortrait {
+      position: relative;
+      &::before {
+        content: url(../../../assets/svgs/cards.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: var(--portrait-before-decorator);
+        animation: fadeIn 1.5s forwards,
+          float 4s cubic-bezier(0.5, 0.5, 0.6, 0.5) infinite;
+        opacity: 0;
+        transform: translatey(0px);
+      }
+      &::after {
+        content: url(../../../assets/svgs/list.svg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: fadeIn 1.5s ease 0.3s forwards,
+          float 4s cubic-bezier(0.5, 0.5, 0.6, 0.5) infinite;
+        opacity: 0;
+        transform: translatey(0px);
+      }
+      .mask {
+        background-color: var(--portrait-bg-color);
+        mask-image: url(../../../assets/svgs/hexagon.svg);
+        mask-size: 100% 100%;
+        .image {
+          mix-blend-mode: luminosity;
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-0.5rem); /* -8px */
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

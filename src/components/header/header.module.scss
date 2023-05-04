@@ -1,0 +1,15 @@
+.header {
+  position: relative;
+  &::before {
+    content: attr(data-decorator);
+    color: var(--highlight-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+}

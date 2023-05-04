@@ -1,0 +1,15 @@
+@import "/src/styles/mediaqueries.scss";
+
+.blogWrapper {
+  display: flex;
+  width: 100%;
+  .blogContent {
+    margin: 0 auto;
+    padding: 3rem 1.5rem; /*48px 24px*/
+    width: 100%;
+    max-width: $lg;
+    @media (min-width: $lg) {
+      padding: 4rem 3rem; /*64px 48px*/
+    }
+  }
+}

@@ -1,10 +1,6 @@
 import { Suspense } from "react";
 import * as Iconset from "./iconset";
-
-interface IconProps {
-  icon: keyof typeof Iconset;
-  className?: string;
-}
+import type { IconProps } from "./types";
 
 const Icon = ({ icon, ...props }: IconProps): JSX.Element => {
   const IconComponent = Iconset[icon];
