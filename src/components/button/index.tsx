@@ -8,10 +8,11 @@ interface ButtonProps extends Partial<Icons> {
   type: "primary" | "secondary" | "icononly";
   onClick?: () => void;
   href?: string;
+  label?: string;
 }
 
 export default function Button(props: ButtonProps): JSX.Element {
-  const { children, type, icon, onClick, href = "" } = props;
+  const { children, type, icon, onClick, href = "", label = "" } = props;
   const buttonStyle = {
     primary: `${styles.button} ${styles.primary}`,
     secondary: `${styles.button} ${styles.secondary}`,
@@ -25,6 +26,7 @@ export default function Button(props: ButtonProps): JSX.Element {
       className={`${buttonStyle[type]} button`}
       href={href}
       target="_blank"
+      aria-label={label}
     >
       <span>{children}</span>
       {icon != null ? <Icon icon={icon} className={styles.icon} /> : null}

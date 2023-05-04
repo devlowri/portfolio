@@ -46,11 +46,13 @@ export default function HeroSection(): JSX.Element {
             href="https://github.com/devlowri"
             type="icononly"
             icon="Github"
+            label="Link to my Github page"
           />
           <Button
             href="https://www.linkedin.com/in/laurajacas/"
             type="icononly"
             icon="Linkedin"
+            label="Link to my Linkedin page"
           />
         </div>
       </div>
