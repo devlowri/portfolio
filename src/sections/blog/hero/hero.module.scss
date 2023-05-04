@@ -43,6 +43,7 @@
     }
     .styledPortrait {
       position: relative;
+      width: 100%;
       &::before {
         content: url(../../../assets/svgs/cards.svg);
         position: absolute;
